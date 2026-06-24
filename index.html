@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portable Animation Components</title>
+  <style>
+    :root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: #f6f7fb;
+      background: #090a0d;
+    }
+    header, main {
+      width: min(100% - 28px, 1280px);
+      margin-inline: auto;
+    }
+    header {
+      padding: clamp(58px, 10vw, 120px) 0 clamp(36px, 6vw, 72px);
+    }
+    h1 {
+      max-width: 10ch;
+      margin: 0;
+      font-size: clamp(48px, 9vw, 112px);
+      line-height: .88;
+      letter-spacing: -.075em;
+    }
+    header p {
+      max-width: 630px;
+      margin: 28px 0 0;
+      color: #a7abb7;
+      font-size: clamp(16px, 2vw, 21px);
+      line-height: 1.55;
+    }
+    main { display: grid; gap: clamp(70px, 12vw, 150px); padding-bottom: 120px; }
+    section { display: grid; gap: 18px; justify-items: center; }
+    .meta { width: min(100%, 1200px); }
+    .number { color: #747a88; font-size: 12px; font-weight: 800; letter-spacing: .16em; }
+    h2 { margin: 6px 0 0; font-size: clamp(25px, 4vw, 44px); letter-spacing: -.045em; }
+    code { color: #b7ff8a; font-size: 12px; }
+    footer { padding: 30px; color: #777d89; text-align: center; }
+  </style>
+  <script src="./infinity-waterfall/component.js" defer></script>
+  <script src="./horizontal-infinite-marquee/component.js" defer></script>
+  <script src="./wave-conveyor/component.js" defer></script>
+  <script src="./pixelated-image-reveal/component.js" defer></script>
+  <script src="./magnetic-image-grid/component.js" defer></script>
+  <script src="./cover-flow-gallery/component.js" defer></script>
+  <script src="./stack-and-release-scroll/component.js" defer></script>
+  <script src="./depth-carousel/component.js" defer></script>
+  <script src="./image-shatter-reassemble/component.js" defer></script>
+  <script src="./academic-milestone-showcase/component.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Motion containers.</h1>
+    <p>Ten standalone Web Components. Each demo below is the same responsive container that can be placed directly into another website.</p>
+  </header>
+  <main>
+    <section>
+      <div class="meta"><span class="number">01</span><h2>Infinity Waterfall</h2><code>&lt;infinity-waterfall&gt;</code></div>
+      <infinity-waterfall></infinity-waterfall>
+    </section>
+    <section>
+      <div class="meta"><span class="number">02</span><h2>Horizontal Infinite Marquee</h2><code>&lt;horizontal-infinite-marquee&gt;</code></div>
+      <horizontal-infinite-marquee direction="right"></horizontal-infinite-marquee>
+    </section>
+    <section>
+      <div class="meta"><span class="number">03</span><h2>Wave Conveyor</h2><code>&lt;wave-conveyor&gt;</code></div>
+      <wave-conveyor></wave-conveyor>
+    </section>
+    <section>
+      <div class="meta"><span class="number">04</span><h2>Pixelated Image Reveal</h2><code>&lt;pixelated-image-reveal&gt;</code></div>
+      <pixelated-image-reveal trigger="hover"></pixelated-image-reveal>
+    </section>
+    <section>
+      <div class="meta"><span class="number">05</span><h2>Magnetic Image Grid</h2><code>&lt;magnetic-image-grid&gt;</code></div>
+      <magnetic-image-grid></magnetic-image-grid>
+    </section>
+    <section>
+      <div class="meta"><span class="number">06</span><h2>Cover-Flow Gallery</h2><code>&lt;cover-flow-gallery&gt;</code></div>
+      <cover-flow-gallery autoplay="true"></cover-flow-gallery>
+    </section>
+    <section>
+      <div class="meta"><span class="number">07</span><h2>Stack-and-Release Scroll</h2><code>&lt;stack-and-release-scroll&gt;</code></div>
+      <stack-and-release-scroll></stack-and-release-scroll>
+    </section>
+    <section>
+      <div class="meta"><span class="number">08</span><h2>Depth Carousel</h2><code>&lt;depth-carousel&gt;</code></div>
+      <depth-carousel></depth-carousel>
+    </section>
+    <section>
+      <div class="meta"><span class="number">09</span><h2>Image Shatter and Reassemble</h2><code>&lt;image-shatter-reassemble&gt;</code></div>
+      <image-shatter-reassemble></image-shatter-reassemble>
+    </section>
+    <section>
+      <div class="meta"><span class="number">10</span><h2>Academic Milestone Showcase</h2><code>&lt;academic-milestone-showcase&gt;</code></div>
+      <academic-milestone-showcase></academic-milestone-showcase>
+    </section>
+  </main>
+  <footer>Standalone, responsive, and framework-independent.</footer>
+</body>
+</html>
